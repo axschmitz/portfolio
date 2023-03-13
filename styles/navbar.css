@@ -1,0 +1,41 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-size: 30px;
+    position: relative;
+    padding: 3px;
+}
+
+nav a:hover {
+    color: var(--text-color);
+}
+
+nav a::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: var(--main-brand-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 150ms ease-in-out;
+}
+
+nav a:hover::after {
+    width: 100%;
+}

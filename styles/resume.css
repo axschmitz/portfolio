@@ -1,0 +1,28 @@
+#experience {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.resume-section {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 30px 50px;
+}
+
+.resume-section h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}

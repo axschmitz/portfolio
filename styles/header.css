@@ -1,0 +1,62 @@
+header {
+    margin-top: 4vh;
+}
+
+.header {
+    padding: 100px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.header-text {
+    width: 850px;
+}
+
+.circle {
+    height: 600px;
+    width: 600px;
+    max-height: 80vw;
+    max-width: 80vw;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 10px solid var(--main-brand-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img {
+    width: 100%;
+}
+
+.flag {
+    height: 40px;
+    width: 40px;
+    max-height: 8vw;
+    max-width: 8vw;
+    overflow: hidden;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag:hover {
+    cursor: pointer;
+}
+
+.flag img {
+    height: 100%;
+}
+
+.flags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
