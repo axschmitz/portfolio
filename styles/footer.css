@@ -40,7 +40,7 @@ footer {
     width: 95%;
 }
 
-.contact {
+#contact {
     display: flex;
     justify-content: center;
     align-items: center;

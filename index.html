@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Alexander Schmitz</title>
+    <link rel="icon" type="image/x-icon" href="/images/game-svgrepo-com.svg">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -18,11 +19,11 @@
         <nav>
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#about-me-section">About Me</a></li>
+                <li><a href="#resume">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="">Research</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="flags">
                 <div class="flag">
@@ -49,27 +50,18 @@
     <div class="divider"></div>
     <main>
         <section id="about-me-section">
-            <img src="images/pic_self.jpeg" alt="Picture Alexander Schmitz">
+            <img src="images/Selfie.jpg" alt="Picture Alexander Schmitz">
             <div style="width: 750px;">
                 <h2>About Me</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci sint labore 
-                    tenetur veritatis maiores nobis repellat molestiae in. Architecto et ipsum beatae 
-                    minus maxime ipsa, quidem provident eos. Neque culpa sed alias impedit! Recusandae 
-                    magni optio sint sit ab rerum est suscipit quas similique fuga? Debitis similique 
-                    nulla iusto blanditiis, id placeat ab magnam itaque, sint autem laboriosam molestias 
-                    possimus aperiam est veniam nostrum ex doloribus, quis perspiciatis quam. Placeat 
-                    soluta, error in aperiam quisquam quidem. Eveniet excepturi aliquam esse vel tempora 
-                    quibusdam odit, iure magnam aliquid totam unde obcaecati, neque facilis? Doloremque, 
-                    accusantium soluta dignissimos sequi repellat exercitationem delectus quisquam voluptatum 
-                    deserunt sint, aliquam, ut accusamus rerum autem voluptas. Itaque quam molestias eligendi 
-                    optio, quidem, similique repudiandae tenetur quo eius porro sequi maxime molestiae pariatur 
-                    doloremque error vero provident. 
-                    Als angehender Medieninformatiker konnte ich bereits in zahlreichen Projekten meine Fähigkeiten
-                    unter Beweis stellen.
-                    Während meines Studiums habe ich mich vor allem mit Der Unreal Engine beschäftigt.
-                    Meine Bachelorarbeit schrieb ich über den Unterschied zwischen C++ und Blueprints in Unreal Engine 5.
-                    Dabei konnte ich Situationen aufzeigen, in welchen die eine Programmiersprache der anderen überlegen ist.
+                    Since my early childhood, I loved playing video games. From strategy games like Emperor: Rise of the middle Kingdom 
+                    to shooter games like Counter Strike, I played them all. Video Games are my passion and once I discovered how they 
+                    are made, I instantly got hooked. From 2018 - 2023, I studied Media Computer Science at the University of applied 
+                    Sciences in Gelsenkirchen. Aside from my studies, I discovered Unity and started developing my
+                    first small game with it. Later university projects introduced me to Unreal Engine and Blueprints. Because I 
+                    prefer programming over visual scripting, I started to use C++ more and more. I fell so much in love with Unreal, 
+                    that I wrote my bachelor's thesis about the differences between C++ and Blueprints in Unreal Engine 5. Now I am 
+                    using it to develop a multiplayer first-person shooter game called Highlander.
                 </p>
             </div>
         </section>
@@ -98,21 +90,74 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section id="projects">
             <h2>Projects</h2>
-            <div class="project">
-                <div class="project-description">
-                    <h3>Highlander</h3>
-                    <p>
-                        Highlander is a Multiplayer first-person shooter. It is being developed with Unreal Engine 5.
-                        It uses listen-servers to connects players via the steam-subsystem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non adipisci, cumque alias ea autem voluptas debitis explicabo nemo impedit eveniet reiciendis temporibus sequi minima est, vel saepe libero odio iure quos recusandae cum sit. Tempora molestias cupiditate esse praesentium ad placeat porro quos voluptatibus maiores, soluta inventore iure aliquid suscipit?
-                    </p>
+            <div class="project-content">
+                <a class="slider"><img src="images/arrow-left-svgrepo-com.svg"></a>
+                <div style="width: 70%">
+                    <div class="project-parent">
+                        <div class="project">
+                            <div class="project-description">
+                                <h3>Highlander</h3>
+                                <p>
+                                    Highlander is a multiplayer first-person shooter. It is being developed with Unreal Engine 5.
+                                    It uses listen-servers to connects players via the steam-subsystem. Right now it features
+                                    8 different Weapons, including projectile weapons like rocket- or grenadelaunchers but also
+                                    hit scan weapons like shotguns or smgs.
+                                </p>
+                            </div>
+                            <div>
+                                <iframe width="700" height="395" src="https://www.youtube.com/embed/jy7Hrgkqv9A" title="Highlander core gameplay elements" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 200px;">
+                        <div class="flip-circle">
+                            <div class="flip-circle-inner">
+                                <div class="flip-circle-front">
+                                    <h2>What I used</h2>
+                                </div>
+                                <div class="flip-circle-back">
+                                    <ul>
+                                        <li>Unreal Engine 5</li>
+                                        <li>C++</li>
+                                        <li>Blueprints</li>
+                                        <li>Mixamo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-circle" style="margin-top: 80px;">
+                            <div class="flip-circle-inner">
+                                <div class="flip-circle-front" style="background-color: var(--text-color); color: var(--main-brand-color)">
+                                    <h2>What I learned</h2>
+                                </div>
+                                <div class="flip-circle-back">
+                                    <ul>
+                                        <li>Networking</li>
+                                        <li>Handling Animations</li>
+                                        <li>Implementing own gameplay systems</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-circle" style="margin-top: 30px;">
+                            <div class="flip-circle-inner">
+                                <div class="flip-circle-front">
+                                    <h2>Links</h2>
+                                </div>
+                                <div class="flip-circle-back">
+                                    <ul>
+                                        <li><a href="https://youtu.be/jy7Hrgkqv9A" target="_blank">Youtube Playlist</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <iframe width="700" height="395" src="https://www.youtube.com/embed/jy7Hrgkqv9A" title="Highlander core gameplay elements" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
+                <a class="slider"><img src="images/arrow-right-svgrepo-com.svg"></a>
             </div>
-            <div class="project">
+            <div class="project hidden">
                 <div>
                     <iframe width="700" height="395" src="https://www.youtube.com/embed/1UZQknP1VeA" title="Bandit Wars Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
@@ -124,7 +169,7 @@
                     </p>
                 </div>
             </div>
-            <div class="project">
+            <div class="project hidden">
                 <div class="project-description">
                     <h3>The Apprentice</h3>
                     <p>
@@ -143,7 +188,7 @@
             <div style="display: flex; justify-content: center; margin-bottom: 50px; color: var(--main-brand-color)">
                 <h2>Contact</h2>
             </div>
-            <div class="contact">
+            <div id="contact">
                 <div class="social-icon">
                     <a href="https://www.linkedin.com/in/alexander-schmitz-80b65a227/" target="_blank">
                         <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn">
