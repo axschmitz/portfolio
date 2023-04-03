@@ -12,6 +12,7 @@ footer {
     background-color: var(--secondary-color);
     padding: 2em;
     width: 10vw;
+    min-width: 10rem;
     height: 20vh;
     border-radius: 20px;
     overflow: hidden;
@@ -26,23 +27,91 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1em;
 }
 
 .social-icon img {
-    height: 90%;
-    width: 90%;
+    height: 7em;
+    width: 7em;
     transition: 150ms ease-in-out;
 }
 
 .social-icon img:hover {
     cursor: pointer;
-    height: 95%;
-    width: 95%;
+    height: 7.5em;
+    width: 7.5em;
 }
 
 #contact {
-    display: flex;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; */
+    display: grid;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    grid-template-areas: 'one two three four five six';
+}
+
+.social-icon:nth-child(1) {
+    grid-area: one;
+}
+
+.social-icon:nth-child(2) {
+    grid-area: two;
+}
+
+.social-icon:nth-child(3) {
+    grid-area: three;
+}
+
+.social-icon:nth-child(4) {
+    grid-area: four;
+}
+
+.social-icon:nth-child(5) {
+    grid-area: five;
+}
+
+.social-icon:nth-child(6) {
+    grid-area: six;
+}
+
+@media (max-width: 600px) {
+    #contact {
+        grid-template-areas:
+            'one'
+            'two'
+            'three'
+            'four'
+            'five'
+            'six';
+    }
+}
+
+@media (min-width: 600px) {
+    #contact {
+        grid-template-areas:
+            'one'
+            'two'
+            'three'
+            'four'
+            'five'
+            'six';
+    }
+}
+
+@media (min-width: 768px) {
+    #contact {
+        grid-template-areas:
+            'one two three'
+            'four five six';
+    }
+}
+
+@media (min-width: 1500px) {
+    #contact {
+        grid-template-areas: 'one two three four five six';
+    }
 }

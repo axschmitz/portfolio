@@ -26,3 +26,9 @@
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
+
+@media(max-width: 800px) {
+    #experience {
+        flex-direction: column;
+    }
+}

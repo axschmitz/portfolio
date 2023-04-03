@@ -9,7 +9,7 @@
     background-color: var(--secondary-color);
 }
 
-.project {
+.project-info {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -32,12 +32,14 @@
     overflow: hidden;
 }
 
-.project-parent {
-    display: flex;
+.project {
+    /* display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 2em;
+    gap: 2em; */
+    max-width: 70%;
+    transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;
 }
 
 .project-description h3 {
@@ -69,10 +71,31 @@ video {
     height: 100%;
 }
 
+.video-container {
+    /* position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    width: 100%;
+    height: 0; */
+    /* width: 100%;
+    height: 56,25%; */
+    min-width: 50%;
+}
+
+.video-container iframe {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+    width: 40em; /* w: 40em, h: 22.5em */
+    height: 22.5em;
+}
+
 .flip-circle {
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 19rem;
+    height: 19rem;
     perspective: 1000px;
 }
 
@@ -123,4 +146,10 @@ video {
 .flip-circle-back ul {
     text-align: left;
     max-width: 70%;
+}
+
+@media(max-width: 800px) {
+    .project {
+        flex-direction: column;
+    }
 }

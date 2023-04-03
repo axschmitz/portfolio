@@ -18,7 +18,7 @@ body {
     min-height: 100vh;
     background-color: var(--primary-color);
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--text-color)
 }
 
@@ -31,13 +31,17 @@ body {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 5.5rem;
     line-height: 115%;
 }
 
 .subheading {
     margin-top: 25px;
     color: var(--secondary-text-color);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 @media(max-width: 800px) {
